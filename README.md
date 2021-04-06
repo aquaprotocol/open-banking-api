@@ -4,7 +4,7 @@ The European Union's PSD2 directive allows third parties to access bank function
 
 Base of the API was created from swagger file obtained from https://developers.pkobp.pl/documentation
 
-For purpose of this project ProvideDomesticTransfer function is mocking.
+For purpose of this project [ProvideDomesticTransfer](https://github.com/aquaprotocol/open-banking-api/blob/61148fcb1a1d88e3d847cfa98627d9a455f8a863/go/api_pis.go#L43) function is mocking.
 
 Request:
 ```go
