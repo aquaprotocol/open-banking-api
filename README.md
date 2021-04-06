@@ -6,6 +6,14 @@ Base of the API was created from swagger file obtained from https://developers.p
 
 For purpose of this project [ProvideDomesticTransfer](https://github.com/aquaprotocol/open-banking-api/blob/61148fcb1a1d88e3d847cfa98627d9a455f8a863/go/api_pis.go#L43) function is mocking.
 
+### ProvideDomesticTransfer
+1. Read data from database
+2. Modification of the Sender account balance
+3. Modification of the Recipient account balance
+4. Save data to database/ update amount state
+5. Create AddPaymentResponse
+
+
 Request:
 ```go
 type PaymentDomesticRequest struct {
