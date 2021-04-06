@@ -1,0 +1,58 @@
+CREATE DATABASE bank_mock;
+
+use bank_mock;
+
+
+CREATE TABLE account_info (
+account_number VARCHAR(30), 
+booking_balance FLOAT(20,2), 
+currency VARCHAR(20),
+available_balance FLOAT(20,2),
+account_type_name VARCHAR(255)
+);
+
+show tables;
+#drop table account_info;
+select * from account_info;
+
+INSERT INTO account_info (account_number, booking_balance, currency, available_balance, account_type_name)
+VALUES ('58150017805507845039441513', 100.00, 'PLN', '100.00', 'Junior');
+
+INSERT INTO account_info (account_number, booking_balance, currency, available_balance, account_type_name)
+VALUES ('45858110278832612545618695', 100.00, 'PLN', '100.00', 'Firma');
+
+
+CREATE TABLE art_state (
+operator VARCHAR(70), 
+amount FLOAT(20,2), 
+name VARCHAR(70),
+transaction_date VARCHAR(100)
+);
+
+#drop table art_state;
+select * from art_state;
+
+
+CREATE TABLE insurance_state (
+operator VARCHAR(70), 
+amount FLOAT(20,2), 
+name VARCHAR(70),
+type_of VARCHAR(10),
+transaction_date VARCHAR(100)
+);
+select * from insurance_state;
+
+
+CREATE TABLE paper_state (
+operator VARCHAR(70), 
+issuer_id VARCHAR(90),
+amount FLOAT(20,2), 
+series VARCHAR(70),
+number_from VARCHAR(10),
+number_to VARCHAR(10),
+transaction_date VARCHAR(100)
+);
+
+select * from paper_state;
+
+
