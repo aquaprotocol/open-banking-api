@@ -11,7 +11,7 @@ func ProvideDomesticTransfer(pDR PaymentDomesticRequest) AddPaymentResponse  {
 
 	db, err := ProvideDBConnection()
 
-	if err == nil {
+	if err != nil {
 		log.Fatal(err)
 	}
 
