@@ -1,5 +1,7 @@
 # open-banking-api
 
+Chainlink Virtual Hackathon Spring 2021
+
 The European Union's PSD2 directive allows third parties to access bank functions. The Open Banking API is a response to these problems. It describes Payment Initiation Service (PIS), Account Information Service (AIS) and Confirmation of the Availability of Funds (CAF). In the AquaProtocol now only domestic payment is implemented in fiat currency deposition and withdrawal. This component is not only API it is also mock bank account functions which are invoked during change owner procedure. Thanks to this approach, the testing process is not dependent on Bank Access.
 
 Base of the API was created from the swagger file obtained from https://developers.pkobp.pl/documentation
